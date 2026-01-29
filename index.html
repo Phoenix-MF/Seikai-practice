@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正解の歌練リスト</title>
+    <style>
+        /* 全体のデザイン設定 */
+        body {
+            background-color: #222; /* 暗めの背景色 */
+            color: #fff;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 24px;
+            color: #f0f0f0;
+        }
+
+        /* 縦並びにするためのコンテナ */
+        .playlist-container {
+            display: flex;
+            flex-direction: column; /* 縦に並べる設定 */
+            align-items: center;    /* 中央揃え */
+            gap: 40px;              /* 動画と動画の間隔 */
+            max-width: 800px;       /* 画面幅の制限（PCで見やすくする） */
+            margin: 0 auto;         /* 画面中央に配置 */
+        }
+
+        /* アイフレームの枠組み */
+        .video-wrapper {
+            width: 100%;
+            aspect-ratio: 16 / 9; /* 動画の比率を16:9に固定 */
+            background-color: #000;
+            border-radius: 10px; /* 角を丸くする */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* 影をつけて浮き上がらせる */
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* アイフレーム本体の設定 */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* 動画ごとのタイトル（必要であれば） */
+        .video-label {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #aaa;
+            text-align: left;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎤 正解の歌練プレイリスト</h1>
+
+    <div class="playlist-container">
+
+        <div>
+            <div class="video-label">課題曲 1</div>
+            <div class="video-wrapper">
+                <iframe 
+                    src="ここにリンクを貼り付け" 
+                    title="Video 1" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div>
+            <div class="video-label">課題曲 2</div>
+            <div class="video-wrapper">
+                <iframe 
+                    src="ここにリンクを貼り付け" 
+                    title="Video 2" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div>
+            <div class="video-label">課題曲 3</div>
+            <div class="video-wrapper">
+                <iframe 
+                    src="ここにリンクを貼り付け" 
+                    title="Video 3" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div>
+            <div class="video-label">課題曲 4</div>
+            <div class="video-wrapper">
+                <iframe 
+                    src="ここにリンクを貼り付け" 
+                    title="Video 4" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div>
+            <div class="video-label">課題曲 5</div>
+            <div class="video-wrapper">
+                <iframe 
+                    src="ここにリンクを貼り付け" 
+                    title="Video 5" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
